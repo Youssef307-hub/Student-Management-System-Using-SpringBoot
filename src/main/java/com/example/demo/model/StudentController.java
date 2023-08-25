@@ -1,4 +1,4 @@
-package model;
+package com.example.demo.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +19,7 @@ public class StudentController {
         this.studentService = studentService;
     }
 
-    @GetMapping("/")
+    @GetMapping()
 	public List<Student> getStudents(){
         return studentService.getStudents();
     }
